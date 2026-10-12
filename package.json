@@ -1,0 +1,33 @@
+{
+  "name": "dsh-skill-digital-oracle",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DSH bundle：把 digital-oracle 技能（从市场交易数据回答预测类问题）作为 bundled skill 分发，全工作区可用。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "skill",
+    "digital-oracle"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "PROVENANCE.md"
+  ],
+  "license": "MIT"
+}
